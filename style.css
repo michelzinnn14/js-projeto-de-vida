@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: var(--cor-do-fundo);
+    background-color: var(--cor-do-fundo--);
     color: var(--branco);
     font-family: "Chakra Petch", sans-serif;
 }
@@ -22,4 +22,22 @@ body{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span{
+    color: var(--verde);
+}
+
+.botao{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
 }
