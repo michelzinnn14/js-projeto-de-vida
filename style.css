@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root{
-    --cor-do-fundo--:#1e1e1e;
-    --verde:#6fff57;
-    --branco:#ffffff;
-    --botao-ativo:#3a375e;
-    --botao-inativo:rgba(58, 55, 94, 0.5);
-    --texto-fundo:rgba(58, 55, 94, 0.3);
+    --cor-de-fundo:#1e1e1e;
+    --verde: #6fff57;
+    --branco: #ffffff;
+    --botao-ativo: #3a375e;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body{
-    background-color: var(--cor-do-fundo--);
+    background-color: var(--cor-de-fundo);
     color: var(--branco);
     font-family: "Chakra Petch", sans-serif;
 }
@@ -27,17 +27,17 @@ body{
 .titulo-principal{
     text-align: left;
     width: 100%;
-    font-size: 32px;
+    font-size: 32px;    
 }
 
 .titulo-principal span{
-    color: var(--verde);
+    color:var(--verde);
 }
 
 .botao{
     font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
-    color: var(--branco);
+    color:var(--branco);
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -50,7 +50,7 @@ body{
     border-top: none;
 }
 
-.botao: :first-child{
+.botao :first-child{
     border-radius: 40px 40px 0 0;
 }
 .botoes{
@@ -61,11 +61,11 @@ body{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
- 
+
 .abas-textos{
-    background-color: var(--texto-fundo)
-    padding: 40px
-    border-radius: 0 0 40px 40px
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
 }
 
 .aba-conteudo.ativo{
@@ -75,24 +75,24 @@ body{
 .aba-conteudo{
     display: none;
 }
-.aba-conteudo-titulo-pricipal{
+.aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
 }
+
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--verde)
+    color: var(--verde);
     text-transform: uppercase;
 }
-
 @media screen and (min-width: 768px){
     .botoes{
         display: flex;
-    }
-.botao :first-child{
+    }    
+    .botao :first-child{
     border-radius: 40px 0 0 0;
     }
-.botao :last-child{
+    .botao :last-child{
     border-radius:0 40px 0 0;
     }
 }
